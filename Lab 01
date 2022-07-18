@@ -1,0 +1,100 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, Im John !!");
+            Console.WriteLine("");
+
+            //List of my collage
+            Collage1 University1 = new Collage1("University of Toronto" , "Toronto" , 97.8 , 1827);
+            Collage1 University2 = new Collage1("University of Waterloo", "Waterloo", 95.8, 1957);
+            Collage1 University3 = new Collage1("York University", "Toronto", 92, 1959);
+            Collage1 University4 = new Collage1("Queens University", "Kingston", 89, 1841);
+            Collage1 University5 = new Collage1("McMaster University", "Hamilton", 87.6, 1887);
+
+
+            Console.WriteLine("===============================================");
+
+            //first Collage
+            Console.WriteLine($"              First Collage                   ");
+            Console.WriteLine(University1);
+            
+
+            Console.WriteLine("===============================================");
+            Console.WriteLine("===============================================");
+
+            //Second Collage
+            Console.WriteLine($"              Second Collage                   ");
+
+            Console.WriteLine(University2);
+
+            Console.WriteLine("===============================================");
+            Console.WriteLine("===============================================");
+
+            //Third Collage
+            Console.WriteLine($"              Third Collage                   ");
+            Console.WriteLine(University3);
+
+            Console.WriteLine("===============================================");
+            Console.WriteLine("===============================================");
+
+            //Fourth Collage
+            Console.WriteLine($"              Fourth Collage                   ");
+            Console.WriteLine(University4);
+
+            Console.WriteLine("===============================================");
+            Console.WriteLine("===============================================");
+
+            //Fifth Collage
+            Console.WriteLine($"              Fifth Collage                   ");
+            Console.WriteLine(University5);
+
+            Console.WriteLine("===============================================");
+            
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////      Class      ////////////////////////////////////////////
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_01
+{
+    class Collage1
+    {
+        private int num;
+        private string name;
+        private string city;
+        private int yearFounded;
+        private bool isPrivate;
+        private double kpiScore;
+        private static int noOftable = 0;
+    
+        public Collage1(string name, string city, double kpiScore, int yearFounded)
+        {
+            num = ++noOftable;
+            this.name = name;
+            this.city = city;
+            this.kpiScore = kpiScore;
+            this.yearFounded = yearFounded;
+        }
+        public override string ToString()
+        {
+            return ($"info = {num}: Name = {name}  ||| City = {city}  |||  kpiScore = {kpiScore}  |||  yearFounded = {yearFounded}");
+        }
+    }
+}
