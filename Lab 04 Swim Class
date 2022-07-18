@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab04
+{
+    public class Swim
+    {
+        string time;
+        int heat;
+        int lane;
+
+        public string Time
+        {
+            get
+            {
+                return time;
+            }
+            set
+            {
+                time = value;
+            }
+        }
+        public int Heat
+        {
+            get
+            {
+                return heat;
+            }
+            set
+            {
+                heat = value;
+            }
+        }
+        public int Lane
+        {
+            get
+            {
+                return lane;
+            }
+            set
+            {
+                lane = value;
+            }
+        }
+
+        public override string ToString()
+        {
+            return ($"Time Swam : {Time}   ||   Number of Heat : {Heat}   ||   Number of lane : {Lane}");
+        }
+    }
+}
