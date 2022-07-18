@@ -1,0 +1,167 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab04
+{
+    public class Clubs
+    {
+
+        public class Club1
+        {
+            string club1;
+            string address1;
+            int clubNumber1;
+            string name1;
+            string phoneNumber1;
+
+
+            //Club 01 Properties 
+            public string Club01
+            {
+                get
+                {
+                    return club1;
+                }
+                set
+                {
+                    club1 = value;
+                }
+
+            }
+            // Address Properties 
+            public string Address1
+            {
+                get
+                {
+                    return address1;
+                }
+                set
+                {
+                    address1 = value;
+                }
+            }
+            // Club Numbers Properties
+            public int ClubNumber1
+            {
+                get
+                {
+                    return clubNumber1;
+                }
+                set
+                {
+                    clubNumber1 = value;
+                }
+            }
+            // Name Properties
+            public string Name1
+            {
+                get
+                {
+                    return name1;
+                }
+                set
+                {
+                    name1 = value;
+                }
+            }
+            // Phone Number Properties 
+            public string PhoneNumber1
+            {
+                get
+                {
+                    return phoneNumber1;
+                }
+                set
+                {
+                    phoneNumber1 = value;
+                }
+            }
+            public override string ToString()
+            {
+                return $"Club 01 : {Club01}   |||   Club Name: {Name1}   |||   Club Address: {Address1}   |||   Club Number: {ClubNumber1}   |||   Club Phone Number: {PhoneNumber1}";
+            }
+
+        }
+
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public class Club2
+        {
+            string club2;
+            string address2;
+            int clubNumber2;
+            string name2;
+            string phoneNumber2;
+
+            //Club 02 Properties 
+            public string Club02
+            {
+                get
+                {
+                    return club2;
+                }
+                set
+                {
+                    club2 = value;
+                }
+            }
+            // Address2 Properties 
+            public string Address2
+            {
+                get
+                {
+                    return address2;
+                }
+                set
+                {
+                    address2 = value;
+                }
+            }
+            // Club2 Numbers Properties
+            public int ClubNumber2
+            {
+                get
+                {
+                    return clubNumber2;
+                }
+                set
+                {
+                    clubNumber2 = value;
+                }
+            }
+            // Name2 Properties
+            public string Name2
+            {
+                get
+                {
+                    return name2;
+                }
+                set
+                {
+                    name2 = value;
+                }
+            }
+            // Phone Number2 Properties 
+            public string PhoneNumber2
+            {
+                get
+                {
+                    return phoneNumber2;
+                }
+                set
+                {
+                    phoneNumber2 = value;
+                }
+            }
+
+            public override string ToString()
+            {
+                return $"Club 02 : {Club02}   |||   Club Name: {Name2}   |||   Club Address: {Address2}   |||   Club Number: {ClubNumber2}   |||   Club Phone Number: {PhoneNumber2}";
+            }
+
+        }
+    }
+}
