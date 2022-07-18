@@ -1,0 +1,344 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Hello, Im John !!");
+            Console.WriteLine();
+
+            Console.WriteLine("===Lab 3===");
+            Console.WriteLine($"________________Swimmer 01_______________");
+            Console.WriteLine();
+            Swimmer01 info = new Swimmer01("Andreas", "69 Shellamwood Trail, Toronto Ont", "647-342-8901", "07-05-1979", 3674896);
+            Console.WriteLine(info);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+
+            Console.WriteLine($"________________Swimmer 02_______________");
+            Console.WriteLine();
+            Swimmer02 info2 = new Swimmer02("Christine", "74 Holford Cresent, Toronto Ont", "647-531-7812", "06-24-1983", 8912370);
+            Console.WriteLine(info2);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+
+            Console.WriteLine($"________________Swimmer 03_______________");
+            Console.WriteLine();
+            Swimmer03 info3 = new Swimmer03("Michael", "4 Kecala Rd, Toronto Ont", "647-290-0915", "10-09-1983", 9034213);
+            Console.WriteLine(info3);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+
+            Console.WriteLine($"________________Swimmer 04_______________");
+            Console.WriteLine();
+            Swimmer03 info4 = new Swimmer03("Loraine", "82 Berner Trail, Toronto Ont", "647-597-9942", "03-29-1981", 0812367);
+            Console.WriteLine(info4);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine("==========================================================================================================");
+            Console.WriteLine();
+
+            bool check = true;
+
+            do
+            {
+
+                Console.WriteLine($"________________Swimmer 05 (User Input Swimmer)_______________");
+                Console.WriteLine();
+                Console.WriteLine("do you want to add a Swimmer? Yes or No? ");
+                string UserInput = Convert.ToString(Console.ReadLine().ToUpper());
+
+                if (UserInput == "YES")
+                {
+                    Console.WriteLine("Please enter your name");
+                    string Name = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Please enter your address");
+                    string Address = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Please enter your phone number");
+                    string Phone = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Please enter your date of birth");
+                    string DateOfBirth = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Please enter your Regestration Number");
+                    string RegNumber = Convert.ToString(Console.ReadLine());
+
+                    UserSwimmer info5 = new UserSwimmer(Name, Address, Phone, DateOfBirth, RegNumber);
+                    Console.WriteLine();
+                    Console.WriteLine("____________________USER INPUT SWIMMER____________________");
+                    Console.WriteLine(info5);
+                    Console.WriteLine();
+
+                    check = true;
+                }
+                else if (UserInput == "NO")
+                {
+                    Console.WriteLine();
+                    check = true;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid, Try again");
+                    check = false;
+                }
+
+            } while (check == false);
+
+
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            Console.WriteLine("                  ===   Clubs  ===                    ");
+            Console.WriteLine("____________________Club 01_______________________");
+            Club01 ClubInfo = new Club01("Chaco Swim Club", "555 Cochrane Dr, Markham Ont", "647-864-1806", 672);
+            Console.WriteLine(ClubInfo);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("____________________Club 02_______________________");
+            Club02 ClubInfo2 = new Club02("Scarborough Swim Club", "Pan-Am Sports Centre, 875 Morningside Ave #2036, Toronto ON", "162-835-852", 789);
+            Console.WriteLine(ClubInfo);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            Console.WriteLine("_____________________________________________________________________");
+            Console.WriteLine("                   === Adding Swimmers to Clubs ===                  ");
+            Console.WriteLine("_____________________________________________________________________");
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________Club 01_______________________");
+            Club01 AddInfo = new Club01("Chaco Swim Club", "555 Cochrane Dr, Markham Ont", "647-864-1806", 672);
+            Console.WriteLine(AddInfo);
+            Console.WriteLine("===============   Andreas   ===============");
+            Console.WriteLine("__________________________________________________________");
+
+            Console.WriteLine("|                         Info                           |");
+            Console.WriteLine($"________________Swimmer 01_______________");
+            Console.WriteLine();
+            Swimmer01 AddInfo2 = new Swimmer01("Andreas", "69 Shellamwood Trail, Toronto Ont", "647-342-8901", "07-05-1979", 3674896);
+            Console.WriteLine(AddInfo2);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("|                         Info                           |");
+            Console.WriteLine($"________________Swimmer 02_______________");
+            Console.WriteLine();
+            Swimmer02 AddInfo3 = new Swimmer02("Christine", "74 Holford Cresent, Toronto Ont", "647-531-7812", "06-24-1983", 8912370);
+            Console.WriteLine(AddInfo3);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________Club 02_______________________");
+            Club02 AddInfo4 = new Club02("Scarborough Swim Club", "Pan-Am Sports Centre, 875 Morningside Ave #2036, Toronto ON", "162-835-852", 789);
+            Console.WriteLine(AddInfo4);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("|                         Info                           |");
+            Console.WriteLine($"________________Swimmer 03_______________");
+            Console.WriteLine();
+            Swimmer03 AddInfo5 = new Swimmer03("Michael", "4 Kecala Rd, Toronto Ont", "647-290-0915", "10-09-1983", 9034213);
+            Console.WriteLine(AddInfo5);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("|                         Info                           |");
+            Console.WriteLine($"________________Swimmer 04_______________");
+            Console.WriteLine();
+            Swimmer03 AddInfo6 = new Swimmer03("Loraine", "82 Berner Trail, Toronto Ont", "647-597-9942", "03-29-1981", 0812367);
+            Console.WriteLine(AddInfo6);
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine();
+
+            // This code is not done yet :(
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        }
+    }
+}
+
+
+
+////////////////////////////////////////////////////////////       CLASSES    ////////////////////////////////////////////////////////////////
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_03
+{
+    class Swimmer01
+    {
+        private string Name;
+        private string Address;
+        private string Phone;
+        private string DateOFBirth;
+        private int RegNumber;
+
+        public Swimmer01(string Name, string Address, string Phone, string DateOFBirth, int RegNumber)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.DateOFBirth = DateOFBirth;
+            this.RegNumber = RegNumber;
+        }
+        public override string ToString()
+        {
+            return ($"Name :   {Name}   ||   Address :   {Address}   ||   Phone :   {Phone}   ||   Date of Birth :   {DateOFBirth}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+    class Swimmer02
+    {
+        private string Name;
+        private string Address;
+        private string Phone;
+        private string DateOFBirth;
+        private int RegNumber;
+
+        public Swimmer02(string Name, string Address, string Phone, string DateOFBirth, int RegNumber)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.DateOFBirth = DateOFBirth;
+            this.RegNumber = RegNumber;
+        }
+        public override string ToString()
+        {
+            return ($"Name :   {Name}   ||   Address :   {Address}   ||   Phone :   {Phone}   ||   Date of Birth :   {DateOFBirth}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+    class Swimmer03
+    {
+        private string Name;
+        private string Address;
+        private string Phone;
+        private string DateOFBirth;
+        private int RegNumber;
+
+        public Swimmer03(string Name, string Address, string Phone, string DateOFBirth, int RegNumber)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.DateOFBirth = DateOFBirth;
+            this.RegNumber = RegNumber;
+        }
+        public override string ToString()
+        {
+            return ($"Name :   {Name}   ||   Address :   {Address}   ||   Phone :   {Phone}   ||   Date of Birth :   {DateOFBirth}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+
+    class Swimmer04
+    {
+        private string Name;
+        private string Address;
+        private string Phone;
+        private string DateOFBirth;
+        private int RegNumber;
+
+        public Swimmer04(string Name, string Address, string Phone, string DateOFBirth, int RegNumber)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.DateOFBirth = DateOFBirth;
+            this.RegNumber = RegNumber;
+        }
+        public override string ToString()
+        {
+            return ($"Name :   {Name}   ||   Address :   {Address}   ||   Phone :   {Phone}   ||   Date of Birth :   {DateOFBirth}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+
+    class UserSwimmer
+    {
+        private string Name;
+        private string Address;
+        private string Phone;
+        private string DateOfBirth;
+        private string RegNumber;
+
+        public UserSwimmer(string Name, string Address, string Phone, string DateOfBirth, string RegNumber)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.DateOfBirth = DateOfBirth;
+            this.RegNumber = RegNumber;
+        }
+        public override string ToString()
+        {
+            return ($"Name :   {Name}   ||   Address :   {Address}   ||   Phone :   {Phone}   ||   Date of Birth :   {DateOfBirth}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    class Club01
+    {
+        private string name;
+        private string address;
+        private string phone;
+        private int RegNumber;
+
+        public Club01(string name, string address, string phone, int RegNumber)
+        {
+            this.name = name;
+            this.address = address;
+            this.phone = phone;
+            this.RegNumber = RegNumber;
+        }
+
+        public override string ToString()
+        {
+            return ($"Name :   {name}   ||   Address :   {address}  ||  Phone :   {phone}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+
+    class Club02
+    {
+        private string name;
+        private string address;
+        private string phone;
+        private int RegNumber;
+
+        public Club02(string name, string address, string phone, int RegNumber)
+        {
+            this.name = name;
+            this.address = address;
+            this.phone = phone;
+            this.RegNumber = RegNumber;
+        }
+
+        public override string ToString()
+        {
+            return ($"Name :   {name}   ||   Address :   {address}  ||  Phone :   {phone}   ||   Registration Number :   {RegNumber} ");
+        }
+    }
+
+   
+}
