@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab04
+{
+    public class Event
+    {
+        public enum Stroke
+        {
+            Butterfly = 1,
+            Backstroke = 2,
+            Breaststroke = 3,
+            freestyle = 4,
+            individualMedley = 5,
+        }
+
+        public enum EventDistance
+        {
+            _50,
+            _100,
+            _200,
+            _400,
+            _800,
+            _1500,
+
+        }
+
+        public class Event1
+        {
+            public override string ToString()
+            {
+                return ($"Events :" + (EventDistance)1 + " " + (Stroke)1 + "   ||   " + (EventDistance)2 + " " + (Stroke)2 + "   ||   " + (EventDistance)3 + " " + (Stroke)3);
+            }
+        }
+        public class Event2
+        {
+            public override string ToString()
+            {
+                return ($"Events :" + (EventDistance)4 + " " + (Stroke)4 + "   ||   " + (EventDistance)5 + " " + (Stroke)5);
+            }
+        }
+
+
+
+    }
+}
