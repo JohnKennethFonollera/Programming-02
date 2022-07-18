@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab04
+{
+    public class SwimMeet
+    {
+        enum Course
+        {
+            //PoolType
+
+            Scum = 1,
+            SCY = 2,
+            LCM = 3,
+        }
+
+        //Events: List<Events>
+        string startDate;
+        string endDate;
+        string nameOfMeet;
+        string nameOfMeet2;
+        int noOfLanes;
+
+        public string StartDate
+        {
+            get
+            {
+                return startDate;
+            }
+            set
+            {
+                startDate = value;
+            }
+        }
+        public string EndDate
+        {
+            get
+            {
+                return endDate;
+            }
+            set
+            {
+                endDate = value;
+            }
+        }
+        public string NameOfMeet
+        {
+            get
+            {
+                return nameOfMeet;
+            }
+            set
+            {
+                nameOfMeet = value;
+            }
+        }
+        public string NameOfMeet2
+        {
+            get
+            {
+                return nameOfMeet2;
+            }
+            set
+            {
+                nameOfMeet2 = value;
+            }
+        }
+        public int NoOfLanes
+        {
+            get
+            {
+                return noOfLanes;
+            }
+            set
+            {
+                noOfLanes = value;
+            }
+        }
+        public override string ToString()
+        {
+            return ($"Meet Number : {NameOfMeet2}   ||   Start date of the meet : {StartDate}   ||   End date of the meet : {EndDate}   ||   Name of the meet : {NameOfMeet}   ||    Number of Lanes : {NoOfLanes}   " + "Pool Type :" + "  " + (Course)1 + "," + (Course)2 + "," + (Course)3);
+        }
+
+    }
+}
