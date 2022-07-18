@@ -1,0 +1,175 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello! My name is John");
+            Console.WriteLine("");
+
+
+            Console.WriteLine("========  Table of Contents ========");
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("===   Club   ===");
+            Club Info = new Club(803, "North Toronto Aquatic Club" , "403 Rosewell Ave, Toronto ON M4R 1P2" , "635-092-0216");
+            Console.WriteLine($"=== {Info}");
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("=== Registrant ===");
+            Registrant Info2 = new Registrant(6472255, "Joseph", "1 / 13 / 1988" , "21 packyard Blvd, Toronto Ontario", "647-923-1928");
+            Console.WriteLine(Info2);
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("=== Swim Meet ===");
+            SwimMeet Info3 = new SwimMeet("06 / 10 / 2022", "06 / 17 / 2022 " ,"Summer Meet");
+            Console.WriteLine(Info3);
+            Console.WriteLine();
+
+
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("=== Event ===");
+            Event Info4 = new Event("50, 100, 200, 400, 800, 1500");
+            Console.WriteLine(Info4);
+
+            Console.WriteLine("____________________________________________________________________________");
+            Console.WriteLine("=== Swim ===");
+            Swim Info5 = new Swim("1:35.9", 20, 6);
+            Console.WriteLine(Info5);
+            Console.ReadLine();
+        }
+    }
+}
+
+//////////////////////////////////////////////////////////////      CLASSES      ///////////////////////////////////////////////////////
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_02
+{
+    class Club
+    {
+        private int num;
+        private string name;
+        private string address;
+        private string TelNum;
+        public Club(int num, string name, string address, string TelNum)
+        {
+            this.num = num;
+            this.name = name;
+            this.address = address;
+            this.TelNum = TelNum;
+        }
+        public override string ToString()
+        {
+            return ($"Clubs Registration Number : {num}   ||   the name of the Club : {name}   ||   Address of the Club : {address}   ||   10 Digit Phone number : {TelNum}");
+            
+        }
+    }
+    class Registrant
+    {
+        private int regNum;
+        private string name;
+        private string DateOfBirth;
+        private string address;
+        private string TelNum;
+        
+        public Registrant (int regNum, string name, string DateOfBirth, string address, string TelNum)
+        {
+            this.regNum = regNum;
+            this.name = name;
+            this.DateOfBirth = DateOfBirth;
+            this.address = address;
+            this.TelNum = TelNum;
+        }
+        public override string ToString()
+        {
+          
+            return ($"Registration number : {regNum}   ||   Registration's name : {name}   ||   Date of Birth : {DateOfBirth}   ||   Address : {address}   ||   Telphone number : {TelNum} ");
+        }
+    }
+    class SwimMeet
+    {
+        enum Course
+        {
+            Scum = 1,
+            SCY = 2,
+            LCM = 3,
+        }
+
+        private string StartDate;
+        private string EndDate;
+        private string NameOfMeet;
+
+        public SwimMeet( string StartDate, string EndDate, string NameOfMeet)
+        {
+            this.StartDate = StartDate;
+            this.EndDate = EndDate;
+            this.NameOfMeet = NameOfMeet;
+
+        }
+        public override string ToString()
+        {
+            return ($"Start date of the meet : {StartDate}   ||   End date of the meet : {EndDate}   ||   Name of the meet : {NameOfMeet}   ||   " + "Pool Type :" + "  " + (Course)1 + "," + (Course)2 + "," + (Course)3);
+        }
+    }
+    class Event
+    {
+        enum Stroke
+        {
+            Butterfly = 1,
+            Backstroke = 2,
+            Breaststroke = 3,
+            freestyle = 4,
+            individualMedley = 5,
+        }
+
+        private string d;
+
+        public Event(string d)
+        {
+            this.d = d;
+          
+        }
+
+        public override string ToString()
+        {
+            return ($"Distance of a swim : {d}   ||   code for the stroke : " + (Stroke)1 + " , " + (Stroke)2 + " , " + (Stroke)3 + " , " + (Stroke)4 + " , " + (Stroke)5);
+        }
+    }
+    class Swim
+    {
+        private string TimeSwam;
+        private int Heat;
+        private int Lane;
+
+        public Swim(string TimeSwam, int Heat, int Lane)
+        {
+            this.TimeSwam = TimeSwam;
+            this.Heat = Heat;
+            this.Lane = Lane;
+        }
+
+        public override string ToString()
+        {
+            return ($"Time Swam : {TimeSwam}   ||   Number of Heat : {Heat}   ||   Number of lane : {Lane}");
+        }
+    }
+}
