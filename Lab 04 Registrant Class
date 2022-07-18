@@ -1,0 +1,379 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab04
+{
+    public class Registrant
+    {
+
+        public class Swimmer1
+        {
+            string swimmer01;
+            string address1;
+            int registrationNumber;
+            string name1;
+            string phoneNumber;
+            string dateOfBirth;
+
+
+            //Swimmer01 Properties 
+            public string Swimmer01
+            {
+                get
+                {
+                    return swimmer01;
+                }
+                set
+                {
+                    swimmer01 = value;
+                }
+
+            }
+            // Address Properties 
+            public string Address1
+            {
+                get
+                {
+                    return address1;
+                }
+                set
+                {
+                    address1 = value;
+                }
+            }
+            // Registration Number Properties
+            public int RegNumber1
+            {
+                get
+                {
+                    return registrationNumber;
+                }
+                set
+                {
+                    registrationNumber = value;
+                }
+            }
+            // Name Properties
+            public string Name1
+            {
+                get
+                {
+                    return name1;
+                }
+                set
+                {
+                    name1 = value;
+                }
+            }
+            // Phone Number Properties 
+            public string PhoneNumber1
+            {
+                get
+                {
+                    return phoneNumber;
+                }
+                set
+                {
+                    phoneNumber = value;
+                }
+            }
+            public string DateOfBirth
+            {
+                get
+                {
+                    return dateOfBirth;
+                }
+                set
+                {
+                    dateOfBirth = value;
+                }
+            }
+            public override string ToString()
+            {
+                return $" Swimmer01 Name : {Name1}   |||   Swimmer 01 : {Swimmer01}   |||   Swimmer01 Registration Number: {RegNumber1}   |||   Swimmer01 Address: {Address1}   |||   Swimmer Date of Birth: {DateOfBirth}   |||   Swimmer01 Phone Number: {PhoneNumber1}";
+            }
+
+        }
+
+
+        /// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public class Swimmer2
+        {
+            string swimmer02;
+            string address2;
+            int registrationNumber2;
+            string name2;
+            string phoneNumber2;
+            string dateOfBirth2;
+
+
+            //Swimmer02 Properties 
+            public string Swimmer02
+            {
+                get
+                {
+                    return swimmer02;
+                }
+                set
+                {
+                    swimmer02 = value;
+                }
+
+            }
+            // Address Properties 
+            public string Address2
+            {
+                get
+                {
+                    return address2;
+                }
+                set
+                {
+                    address2 = value;
+                }
+            }
+            // Registration Number Properties
+            public int RegNumber2
+            {
+                get
+                {
+                    return registrationNumber2;
+                }
+                set
+                {
+                    registrationNumber2 = value;
+                }
+            }
+            // Name Properties
+            public string Name2
+            {
+                get
+                {
+                    return name2;
+                }
+                set
+                {
+                    name2 = value;
+                }
+            }
+            // Phone Number Properties 
+            public string PhoneNumber2
+            {
+                get
+                {
+                    return phoneNumber2;
+                }
+                set
+                {
+                    phoneNumber2 = value;
+                }
+            }
+            public string DateOfBirth2
+            {
+                get
+                {
+                    return dateOfBirth2;
+                }
+                set
+                {
+                    dateOfBirth2 = value;
+                }
+            }
+            public override string ToString()
+            {
+                return $" Swimmer01 Name : {Name2}   |||   Swimmer 01 : {Swimmer02}   |||   Swimmer01 Registration Number: {RegNumber2}   |||   Swimmer01 Address: {Address2}   |||   Swimmer Date of Birth: {DateOfBirth2}   |||   Swimmer01 Phone Number: {PhoneNumber2}";
+            }
+
+        }
+
+
+
+        /// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public class Swimmer3
+        {
+            string swimmer03;
+            string address3;
+            int registrationNumber3;
+            string name3;
+            string phoneNumber3;
+            string dateOfBirth3;
+
+
+            //Swimmer02 Properties 
+            public string Swimmer03
+            {
+                get
+                {
+                    return swimmer03;
+                }
+                set
+                {
+                    swimmer03 = value;
+                }
+
+            }
+            // Address Properties 
+            public string Address3
+            {
+                get
+                {
+                    return address3;
+                }
+                set
+                {
+                    address3 = value;
+                }
+            }
+            // Registration Number Properties
+            public int RegNumber3
+            {
+                get
+                {
+                    return registrationNumber3;
+                }
+                set
+                {
+                    registrationNumber3 = value;
+                }
+            }
+            // Name Properties
+            public string Name3
+            {
+                get
+                {
+                    return name3;
+                }
+                set
+                {
+                    name3 = value;
+                }
+            }
+            // Phone Number Properties 
+            public string PhoneNumber3
+            {
+                get
+                {
+                    return phoneNumber3;
+                }
+                set
+                {
+                    phoneNumber3 = value;
+                }
+            }
+            public string DateOfBirth3
+            {
+                get
+                {
+                    return dateOfBirth3;
+                }
+                set
+                {
+                    dateOfBirth3 = value;
+                }
+            }
+            public override string ToString()
+            {
+                return $" Swimmer01 Name : {Name3}   |||   Swimmer 01 : {Swimmer03}   |||   Swimmer01 Registration Number: {RegNumber3}   |||   Swimmer01 Address: {Address3}   |||   Swimmer Date of Birth: {DateOfBirth3}   |||   Swimmer01 Phone Number: {PhoneNumber3}";
+            }
+
+        }
+
+
+        /// ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public class Swimmer4
+        {
+            string swimmer04;
+            string address4;
+            int registrationNumber4;
+            string name4;
+            string phoneNumber4;
+            string dateOfBirth4;
+
+
+            //Swimmer02 Properties 
+            public string Swimmer04
+            {
+                get
+                {
+                    return swimmer04;
+                }
+                set
+                {
+                    swimmer04 = value;
+                }
+
+            }
+            // Address Properties 
+            public string Address4
+            {
+                get
+                {
+                    return address4;
+                }
+                set
+                {
+                    address4 = value;
+                }
+            }
+            // Registration Number Properties
+            public int RegNumber4
+            {
+                get
+                {
+                    return registrationNumber4;
+                }
+                set
+                {
+                    registrationNumber4 = value;
+                }
+            }
+            // Name Properties
+            public string Name4
+            {
+                get
+                {
+                    return name4;
+                }
+                set
+                {
+                    name4 = value;
+                }
+            }
+            // Phone Number Properties 
+            public string PhoneNumber4
+            {
+                get
+                {
+                    return phoneNumber4;
+                }
+                set
+                {
+                    phoneNumber4 = value;
+                }
+            }
+            public string DateOfBirth4
+            {
+                get
+                {
+                    return dateOfBirth4;
+                }
+                set
+                {
+                    dateOfBirth4 = value;
+                }
+            }
+            public override string ToString()
+            {
+                return $" Swimmer01 Name : {Name4}   |||   Swimmer 01 : {Swimmer04}   |||   Swimmer01 Registration Number: {RegNumber4}   |||   Swimmer01 Address: {Address4}   |||   Swimmer Date of Birth: {DateOfBirth4}   |||   Swimmer01 Phone Number: {PhoneNumber4}";
+            }
+
+        }
+
+    }
+}
