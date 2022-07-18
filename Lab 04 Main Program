@@ -1,0 +1,162 @@
+using Lab04;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static Lab04.Clubs;
+using static Lab04.Event;
+using static Lab04.Registrant;
+
+namespace Lab_04
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Clubs();
+            Registrant();
+            Swim();
+            Event();
+            SwimMeet();
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+           
+
+            Console.ReadLine();
+        }
+        public static void Clubs()
+        {
+            Console.WriteLine("============================================   CLUB 01   ===================================================");
+            Club1 aClubs1 = new Club1() { Club01 = "Club 01", Address1 = "555 Cochrane Dr", ClubNumber1 = 672, Name1 = "Chaco Swim Club", PhoneNumber1 = "647-864-1806" };
+            Console.WriteLine(aClubs1);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("============================================   CLUB 02   ===================================================");
+            Club2 aClubs2 = new Club2() { Club02 = "Club02", Address2 = "Pan-Am Sports Centre, 875 Morningside Ave, Toronto ON", ClubNumber2 = 789, Name2 = "Scarborough Swim Club", PhoneNumber2 = "162-835-8520" };
+            Console.WriteLine(aClubs2);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+        }
+        private static void Registrant()
+        {
+            Console.WriteLine("============================================   Swimmer 01   ===================================================");
+            Swimmer1 aswimLib = new Swimmer1() { Name1 = "Andreas", Address1 = "69 Shellamwood Trail, Toronto Ont", DateOfBirth = "07-05-1979", RegNumber1 = 3674896, Swimmer01 = "Swimmer01", PhoneNumber1 = "647-342-8901" };
+            Console.WriteLine(aswimLib);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("============================================   Swimmer 02   ===================================================");
+            Swimmer2 aswimLib2 = new Swimmer2() { Name2 = "Christine", Address2 = "74 Holford Cresent, Toronto Ont", DateOfBirth2 = "06-24-1983", RegNumber2 = 8912370, Swimmer02 = "Swimmer02", PhoneNumber2 = "647-531-7812" };
+            Console.WriteLine(aswimLib2);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("============================================   Swimmer 03   ===================================================");
+            Swimmer3 aswimLib3 = new Swimmer3() { Name3 = "Michael", Address3 = "4 Kecala Rd, Toronto Ont", DateOfBirth3 = "10-09-1983", RegNumber3 = 9034213, Swimmer03 = "Swimmer03", PhoneNumber3 = "647-290-0915" };
+            Console.WriteLine(aswimLib3);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("============================================   Swimmer 04   ===================================================");
+            Swimmer4 aswimLib4 = new Swimmer4() { Name4 = "Loraine", Address4 = "82 Berner Trail, Toronto Ont", DateOfBirth4 = "03-29-1981", RegNumber4 = 0812367, Swimmer04 = "Swimmer04", PhoneNumber4 = "647-597-9942" };
+            Console.WriteLine(aswimLib4);
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+        }
+        private static void Swim()
+        {
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+            Console.WriteLine("============================================   Swim   ===================================================");
+            Swim aswim = new Swim() { Time = "1:35.9", Heat = 20, Lane = 6 };
+            Console.WriteLine(aswim);
+        }
+
+        private static void Event()
+        {
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+
+            Console.WriteLine("=========================== Event =============================");
+            Event1 aEvent = new Event1();
+            Console.WriteLine(aEvent);
+            Console.WriteLine();
+
+            Event2 aEvent2 = new Event2();
+            Console.WriteLine(aEvent2);
+            Console.WriteLine();
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+        }
+        private static void SwimMeet()
+        {
+            Console.WriteLine("============================================   Swim Meets and Events   ===================================================");
+            Console.WriteLine("=========================== Meets =============================");
+            SwimMeet aSwimMeet = new SwimMeet() { NameOfMeet2 = "1", StartDate = "06 / 10 / 2022", EndDate = "06 / 17 / 2022", NameOfMeet = "Summer Meet", NoOfLanes = 4 };
+            Console.WriteLine(aSwimMeet);
+            Console.WriteLine();
+            SwimMeet aSwimMeet2 = new SwimMeet() { NameOfMeet2 = "2", StartDate = "06 / 20 / 2022", EndDate = "06 / 28 / 2022", NameOfMeet = "Winter Meet", NoOfLanes = 3 };
+            Console.WriteLine(aSwimMeet2);
+            Console.WriteLine();
+
+            //Meet 01
+            Console.WriteLine(aSwimMeet);
+            Console.WriteLine($"Event : {(EventDistance)1}");
+            Console.WriteLine(" Andreas :  Not Seeded / No Swim");
+            Console.WriteLine(" Christine :  Not Seeded / No Swim");
+            Console.WriteLine(" Loraine : Not Seeded / No Swim");
+
+            Console.WriteLine($"Event : {(EventDistance)2}");
+            Console.WriteLine(" Christine :  Not Seeded / No Swim");
+            Console.WriteLine(" Loraine : Not Seeded / No Swim");
+
+            Console.WriteLine($"Event : {(EventDistance)3}");
+            Console.WriteLine(" Andreas :  Not Seeded / No Swim");
+
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+
+            //Meet 02 
+            Console.WriteLine(aSwimMeet2);
+            Console.WriteLine($"Event : {(EventDistance)4}");
+            Console.WriteLine(" Michael :  Not Seeded / No Swim");
+            Console.WriteLine(" Loraine : Not Seeded / No Swim");
+            Console.WriteLine($"Event : {(EventDistance)5}");
+            Console.WriteLine(" Andreas :  Not Seeded / No Swim");
+            Console.WriteLine(" Christine :  Not Seeded / No Swim");
+            Console.WriteLine(" Michael :  Not Seeded / No Swim");
+
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________________________________________________________________");
+            Console.WriteLine();
+        }
+        private static void SwimmersManager()
+        {
+            
+        }
+        private static void ClubManagers()
+        {
+            
+        }
+    }
+}
